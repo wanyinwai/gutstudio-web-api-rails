@@ -7,6 +7,7 @@
     <tr>
       <th>Name</th>
       <th>Company name</th>
+      <th>Date Added</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= merchant.name %></td>
         <td><%= merchant.company_name %></td>
+        <td><%= merchant.created_at %>
         <td><%= link_to 'Show', merchant %></td>
         <td><%= link_to 'Edit', edit_merchant_path(merchant) %></td>
         <td><%= link_to 'Destroy', merchant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
